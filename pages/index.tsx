@@ -19,8 +19,6 @@ const Home: React.FC = () => {
     }
   );
 
-  console.log(error)
-
   return (
     <>
       <Head>
