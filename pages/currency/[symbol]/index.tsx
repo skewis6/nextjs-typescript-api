@@ -21,13 +21,13 @@ const Currency: React.FC = () => {
   // this essentially makes sure the page fails gracefully if the symbol is not found
   useEffect(() => {
     if (!symbol) {
-      setSymbolError(false)
+      setSymbolError(true)
     }
   }, [])
 
   useEffect(() => {
     if (symbol) {
-      setSymbolError(true)
+      setSymbolError(false)
     }
   }, [symbol])
 
