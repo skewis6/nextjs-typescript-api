@@ -11,10 +11,10 @@ export const CoinTile: React.FC<CoinTileProps> = ({ id, current_price, high_24h,
         alt={name}
         width={200}
         height={200}
-        className="object-cover object-center"
+        className="object-cover object-center mx-auto"
       />
       <div className="flex-1 p-4">
-        <h2 className="text-xl font-semibold mb-2">{name}</h2>
+        <h2 className="text-xl font-semibold mb-2 text-center">{name}</h2>
         <ul className="list-disc pl-5">
           <li>Current Price: {current_price}</li>
           <li>24h High: {high_24h}</li>
